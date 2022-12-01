@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding: 0 4%;
+}
+
+main nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main nav ul {
+    display: flex;
+    align-items: center;
+}
+
+main nav ul li {
+    margin: 0 20px;
+}
+
+main nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+main nav ul li a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #ff5d00;
+    transition: all 0.3s ease;
+}
+
+main nav ul li a:hover::after {
+    width: 100%;
+}
+
+main nav button {
+    padding: 10px 25px;
+    border: none;
+    background-color: #ff5d00;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ==== MAIN --> SECTION ==== */
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+main section .section-text {
+    color: #fff;
+    width: 50%;
+}
+
+main section .section-text h1 {
+    font-size: 7.5rem;
+}
+
+main section .section-text h1 span {
+    color: #ff5d00;
+}
+
+main section .social-media {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+main section .social-media a {
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+main section .section-form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section .section-form .form-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main section .section-form .form-content h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+main section .section-form .form-content form .form-input {
+    width: 370px;
+    margin: 15px 0;
+}
+
+main section .section-form .form-content form .form-input input,
+main section .section-form .form-content form .form-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    color: #757575;
+    transition: all 0.3s ease;
+}
+
+main section .section-form .form-content form .form-input input:focus,
+main section .section-form .form-content form .form-input textarea:focus {
+    border-color: #ff5d00;
+}
+
+main section .section-form .form-content form .form-input textarea {
+    height: 100px;
+}
+
+main section .section-form .form-content form button {
+    padding: 10px 25px;
+    border: none;
+    background-color: #ff5d00;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+::selection {
+    background-color: #ff5d00;
+    color: #fff;
+}
